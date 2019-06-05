@@ -43,6 +43,7 @@ public class Producto extends Entidad {
 			frame.getContentPane().setLayout(null);
 			frame.getContentPane().add(msj);
 			frame.setVisible(true);	
+			
 			// TODO: Utilizar el Frame mensaje para mostrar el nombre de lo que se ha consultado		
 		
 	}

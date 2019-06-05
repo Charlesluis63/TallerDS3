@@ -7,6 +7,7 @@ public aspect VerificarSesion {
   //Advices. Se ejecutarán en el lugar indicado por el pointcut.
    void around() : validar() {
         if(!IniciarSesion.sesionIniciada) {
+        	System.out.println("Debe iniciar sesion");
         	IniciarSesion.initialize();
         	
         }
@@ -15,8 +16,6 @@ public aspect VerificarSesion {
         }
     } 
     after() : validar()  {
-   
     	
-        
-    }  
+    	}  
 }
